@@ -1744,3 +1744,1445 @@ Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-1
 
 
 Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 16:25:42 -0600
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-12-01 16:28:18 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"   ORDER BY "admin_users"."id" desc LIMIT 30 OFFSET 0[0m
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/index.html.arb (709.4ms)
+Completed 200 OK in 784ms (Views: 745.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:19 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:20 -0600
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/page/index.html.arb (220.1ms)
+Completed 200 OK in 225ms (Views: 223.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:25 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 16:28:26 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCategories (20141201230059)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "enabled" boolean, "top_level_category" boolean, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "categories" already exists: CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "enabled" boolean, "top_level_category" boolean, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (122.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (99.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateAdminUsers (20141201180416)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "admin_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.0ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[35mAdminUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "admin_users"  WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "admin_users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-12-01 23:10:50.087717"], ["email", "admin@example.com"], ["encrypted_password", "$2a$10$j2SnlpeEUtqC/eUK8145w.cv/ErUSM9ocp7IIqaWJhLZWT7pfGL2u"], ["updated_at", "2014-12-01 23:10:50.087717"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201180416"]]
+  [1m[36m (79.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateActiveAdminComments (20141201180424)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "active_admin_comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "namespace" varchar(255), "body" text, "resource_id" varchar(255) NOT NULL, "resource_type" varchar(255) NOT NULL, "author_id" integer, "author_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  CREATE  INDEX "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" ("author_type", "author_id")
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201180424"]]
+  [1m[36m (99.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCategories (20141201230059)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "enabled" boolean, "top_level_category" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230059"]]
+  [1m[36m (104.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProducts (20141201230107)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "price" decimal, "sale_price" decimal, "weight_in_grams" integer, "height_in_cm" integer, "width_in_cm" integer, "length_in_cm" integer, "enabled" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230107"]]
+  [1m[36m (94.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProductColours (20141201230115)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "product_colours" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quanity" integer, "unlimited_quantity" boolean, "enabled" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230115"]]
+  [1m[36m (127.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateColours (20141201230124)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "colours" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "red_rgb_value" integer, "green_rgb_value" integer, "blue_rgb_value" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230124"]]
+  [1m[36m (107.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProductPictures (20141201230132)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "product_pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "file_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230132"]]
+  [1m[36m (84.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePurchases (20141201230140)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quantity" integer, "price" integer, "weight_in_grams" integer, "length_in_cm" integer, "width_in_cm" integer, "height_in_cm" integer, "colour" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230140"]]
+  [1m[36m (90.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrders (20141201230149)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "order_tracking_number" varchar(255), "order_calculated_shipping_costs" decimal, "order_actual_shipping_costs" decimal, "order_pst" integer, "order_gst" integer, "order_hst" integer, "order_qst" integer, "order_notes" varchar(255), "billing_address_full_name" varchar(255), "billing_email" varchar(255), "billing_phone_number" varchar(255), "billing_cell_number" varchar(255), "billing_address" varchar(255), "billing_city" varchar(255), "billing_province" varchar(255), "billing_country" varchar(255), "billing_postal_code" varchar(255), "billing_notes" varchar(255), "shipping_full_name" varchar(255), "shipping_phone_number" varchar(255), "shipping_cell_number" varchar(255), "shipping_email" varchar(255), "shipping_address" varchar(255), "shipping_city" varchar(255), "shipping_province" varchar(255), "shipping_country" varchar(255), "shipping_postal_code" varchar(255), "shipping_notes" varchar(255), "shipping_facility_name" varchar(255), "shipping_facility_phone_number" varchar(255), "shipping_facility_fax_number" varchar(255), "shipping_facility_email" varchar(255), "shipping_facility_address" varchar(255), "shipping_facility_city" varchar(255), "facility_province" varchar(255), "facility_country" varchar(255), "shipping_facility_postal_code" varchar(255), "shipping_facility_notes" varchar(255), "shipping_method_name" varchar(255), "shipping_method_min_shipping_time_in_days" integer, "shipping_method_max_shipping_time_in_days" integer, "shipping_insurance_value" decimal, "shipping_method_with_signature" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230149"]]
+  [1m[36m (107.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDisputeOrders (20141201230157)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "dispute_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dispute_active" boolean, "refunded" decimal, "notes" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230157"]]
+  [1m[36m (148.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDisputeChats (20141201230205)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "dispute_chats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_from_customer" boolean, "message" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230205"]]
+  [1m[36m (124.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBillingAddresses (20141201230213)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "billing_addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar(255), "email" varchar(255), "phone_number" varchar(255), "cell_number" varchar(255), "address" varchar(255), "city" varchar(255), "postal_code" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230213"]]
+  [1m[36m (93.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCustomers (20141201230222)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar(255), "email" varchar(255), "encrypted_password" varchar(255), "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "sign_in_count" integer, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230222"]]
+  [1m[36m (95.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingAddresses (20141201230230)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "shipping_addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar(255), "phone_number" varchar(255), "cell_number" varchar(255), "email" varchar(255), "address" varchar(255), "city" varchar(255), "postal_code" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230230"]]
+  [1m[36m (95.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingFacilities (20141201230239)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "shipping_facilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "facility_name" varchar(255), "phone_number" varchar(255), "fax_number" varchar(255), "email" varchar(255), "address" varchar(255), "city" varchar(255), "postal_code" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230239"]]
+  [1m[36m (129.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingMethods (20141201230247)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "shipping_methods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "min_shipping_time_in_days" integer, "max_shipping_time_in_days" integer, "tracking_cost" decimal, "one_hundred_dollar_base_insurance_cost" decimal, "one_hundred_dollar_additional_insurance_cost" decimal, "maximum_insurance_value_allowed" decimal, "signature_cost" decimal, "improper_packaging_cost" decimal, "min_shipping_weight_in_grams" integer, "max_shipping_weight_in_grams" integer, "min_shipping_width_in_cm" integer, "max_shipping_width_in_cm" integer, "min_shipping_length_in_cm" integer, "max_shipping_length_in_cm" integer, "min_shipping_height_in_cm" integer, "max_shipping_height_in_cm" integer, "base_shipping_cost" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230247"]]
+  [1m[36m (127.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrderStatuses (20141201230255)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "order_statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230255"]]
+  [1m[36m (127.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingCarriers (20141201230304)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "shipping_carriers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230304"]]
+  [1m[36m (92.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProvinces (20141201230312)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "provinces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "pst" integer, "gst" integer, "hst" integer, "qst" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230312"]]
+  [1m[36m (94.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCountries (20141201230321)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "countries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "currency_abbreviation" varchar(255), "multiplied_against_CAD_for_currency_value_comparisons" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230321"]]
+  [1m[36m (93.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateHelpChats (20141201230329)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "help_chats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_from_customer" boolean, "message" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230329"]]
+  [1m[36m (97.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAdminPictures (20141201230337)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "admin_pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "file_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201230337"]]
+  [1m[36m (94.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-12-01 17:18:40 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 33ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2014-12-01 17:18:40 -0600
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (105.1ms)
+Completed 200 OK in 619ms (Views: 615.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:41 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:42 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:43 -0600
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2014-12-01 17:18:49 -0600
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RQyiH3+6FQRBSaqOEwdJwkDn/7oIF5uQvm6VBkV/PeQ=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."email" = 'admin@example.com'  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "admin_users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = 1[0m  [["current_sign_in_at", "2014-12-01 23:18:49.297983"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-12-01 23:18:49.297983"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-12-01 23:18:49.299491"]]
+  [1m[35m (165.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/dashboard
+Completed 302 Found in 286ms (ActiveRecord: 166.8ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-12-01 17:18:49 -0600
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/page/index.html.arb (261.3ms)
+Completed 200 OK in 270ms (Views: 264.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:18:49 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:18:49 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:50 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:51 -0600
+
+
+Started GET "/admin/admin_pictures" for 127.0.0.1 at 2014-12-01 17:18:53 -0600
+Processing by Admin::AdminPicturesController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_pictures"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/index.html.arb (288.2ms)
+Completed 200 OK in 302ms (Views: 293.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:54 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:18:55 -0600
+
+
+Started GET "/admin/countries" for 127.0.0.1 at 2014-12-01 17:19:00 -0600
+Processing by Admin::CountriesController#index as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "countries"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/index.html.arb (285.2ms)
+Completed 200 OK in 294ms (Views: 290.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:00 -0600
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:01 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:02 -0600
+
+
+Started GET "/admin/countries/new" for 127.0.0.1 at 2014-12-01 17:19:03 -0600
+Processing by Admin::CountriesController#new as HTML
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/new.html.arb (264.2ms)
+Completed 200 OK in 271ms (Views: 269.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:04 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:05 -0600
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "admin_users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "admin_users"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"   ORDER BY "admin_users"."id" desc LIMIT 30 OFFSET 0
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/index.html.arb (277.2ms)
+Completed 200 OK in 286ms (Views: 282.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:24 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:25 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:26 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:26 -0600
+
+
+Started GET "/admin/admin_users/1/edit" for 127.0.0.1 at 2014-12-01 17:19:28 -0600
+Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1 LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/edit.html.arb (297.2ms)
+Completed 200 OK in 305ms (Views: 303.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:29 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:30 -0600
+
+
+Started PATCH "/admin/admin_users/1" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+Processing by Admin::AdminUsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n9i8lNipmDGStVNcrLZooWLD3ErJzzGpJYIrd1kmbs8=", "admin_user"=>{"email"=>"snarg_@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Admin user", "id"=>"1"}
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mAdminUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "admin_users"  WHERE ("admin_users"."email" = 'snarg_@hotmail.com' AND "admin_users"."id" != 1) LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.0ms)[0m  UPDATE "admin_users" SET "email" = ?, "encrypted_password" = ?, "updated_at" = ? WHERE "admin_users"."id" = 1  [["email", "snarg_@hotmail.com"], ["encrypted_password", "$2a$10$odZoz8R8v0KSY3dthZ3yFOu9DRJYQDp/YqAC2V2cLLSzbYElroQIa"], ["updated_at", "2014-12-01 23:19:40.179621"]]
+  [1m[36m (83.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users/1
+Completed 302 Found in 179ms (ActiveRecord: 85.0ms)
+
+
+Started GET "/admin/admin_users/1" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 2ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/devise/shared/_links.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (16.6ms)
+Completed 200 OK in 236ms (Views: 234.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:40 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:41 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:42 -0600
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2014-12-01 17:19:47 -0600
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n9i8lNipmDGStVNcrLZooWLD3ErJzzGpJYIrd1kmbs8=", "admin_user"=>{"email"=>"snarg_@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."email" = 'snarg_@hotmail.com'  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "admin_users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = 1[0m  [["current_sign_in_at", "2014-12-01 23:19:47.526049"], ["sign_in_count", 2], ["updated_at", "2014-12-01 23:19:47.527050"]]
+  [1m[35m (136.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/admin_users/1
+Completed 302 Found in 227ms (ActiveRecord: 136.0ms)
+
+
+Started GET "/admin/admin_users/1" for 127.0.0.1 at 2014-12-01 17:19:47 -0600
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35mAdminUser Load (0.0ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'AdminUser' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "active_admin_comments"  WHERE "active_admin_comments"."resource_type" = 'AdminUser' AND "active_admin_comments"."resource_id" = '1' AND "active_admin_comments"."namespace" = 'admin'
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/resource/show.html.arb (305.2ms)
+Completed 200 OK in 313ms (Views: 310.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:48 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 17:19:49 -0600
