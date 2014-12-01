@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: 
+  name: MyString
   pst: 1
   gst: 1
   hst: 1
   qst: 1
 
 two:
-  name: 
+  name: MyString
   pst: 1
   gst: 1
   hst: 1
