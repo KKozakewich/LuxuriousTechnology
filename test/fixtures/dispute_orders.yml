@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dispute_active: false
+  refunded: 9.99
+  notes: 9.99
+
+two:
+  dispute_active: false
+  refunded: 9.99
+  notes: 9.99

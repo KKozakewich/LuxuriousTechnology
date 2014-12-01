@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quanity: 1
+  unlimited_quantity: false
+  enabled: false
+
+two:
+  quanity: 1
+  unlimited_quantity: false
+  enabled: false

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  red_rgb_value: 1
+  green_rgb_value: 1
+  blue_rgb_value: 1
+
+two:
+  name: MyString
+  red_rgb_value: 1
+  green_rgb_value: 1
+  blue_rgb_value: 1

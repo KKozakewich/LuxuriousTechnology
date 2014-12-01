@@ -1305,3 +1305,241 @@ Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-1
 
 
 Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 15:54:30 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCategories (20141201215802)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "enabled" boolean, "top_level_category" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215802"]]
+  [1m[36m (137.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProducts (20141201215810)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "price" decimal, "sale_price" decimal, "weight_in_grams" integer, "height_in_cm" integer, "width_in_cm" integer, "length_in_cm" integer, "enabled" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215810"]]
+  [1m[36m (117.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProductColours (20141201215818)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "product_colours" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quanity" integer, "unlimited_quantity" boolean, "enabled" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215818"]]
+  [1m[36m (111.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateColours (20141201215827)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "colours" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "red_rgb_value" integer, "green_rgb_value" integer, "blue_rgb_value" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215827"]]
+  [1m[36m (94.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProductPictures (20141201215835)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "product_pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "file_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215835"]]
+  [1m[36m (240.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePurchases (20141201215843)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quantity" integer, "price" integer, "weight_in_grams" integer, "length_in_cm" integer, "width_in_cm" integer, "height_in_cm" integer, "colour" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215843"]]
+  [1m[36m (160.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrders (20141201215852)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "order_tracking_number" varchar(255), "order_calculated_shipping_costs" decimal, "order_actual_shipping_costs" decimal, "order_pst" integer, "order_gst" integer, "order_hst" integer, "order_qst" integer, "order_notes" varchar(255), "billing_address_full_name" varchar(255), "billing_email" varchar(255), "billing_phone_number" varchar(255), "billing_cell_number" varchar(255), "billing_address" varchar(255), "billing_city" varchar(255), "billing_province" varchar(255), "billing_country" varchar(255), "billing_postal_code" varchar(255), "billing_notes" varchar(255), "shipping_full_name" varchar(255), "shipping_phone_number" varchar(255), "shipping_cell_number" varchar(255), "shipping_email" varchar(255), "shipping_address" varchar(255), "shipping_city" varchar(255), "shipping_province" varchar(255), "shipping_country" varchar(255), "shipping_postal_code" varchar(255), "shipping_notes" varchar(255), "shipping_facility_name" varchar(255), "shipping_facility_phone_number" varchar(255), "shipping_facility_fax_number" varchar(255), "shipping_facility_email" varchar(255), "shipping_facility_address" varchar(255), "shipping_facility_city" varchar(255), "facility_province" varchar(255), "facility_country" varchar(255), "shipping_facility_postal_code" varchar(255), "shipping_facility_notes" varchar(255), "shipping_method_name" varchar(255), "shipping_method_min_shipping_time_in_days" integer, "shipping_method_max_shipping_time_in_days" integer, "shipping_insurance_value" decimal, "shipping_method_with_signature" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215852"]]
+  [1m[36m (90.6ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDisputeOrders (20141201215900)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "dispute_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dispute_active" boolean, "refunded" decimal, "notes" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215900"]]
+  [1m[36m (129.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDisputeChats (20141201215908)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "dispute_chats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_from_customer" boolean, "message" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215908"]]
+  [1m[36m (160.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBillingAddresses (20141201215916)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "billing_addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar(255), "email" varchar(255), "phone_number" varchar(255), "cell_number" varchar(255), "address" varchar(255), "city" varchar(255), "postal_code" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215916"]]
+  [1m[36m (162.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCustomers (20141201215924)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar(255), "email" varchar(255), "encrypted_password" varchar(255), "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "sign_in_count" integer, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215924"]]
+  [1m[36m (111.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingAddresses (20141201215933)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "shipping_addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "full_name" varchar(255), "phone_number" varchar(255), "cell_number" varchar(255), "email" varchar(255), "address" varchar(255), "city" varchar(255), "postal_code" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215933"]]
+  [1m[36m (149.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingFacilities (20141201215941)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "shipping_facilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "facility_name" varchar(255), "phone_number" varchar(255), "fax_number" varchar(255), "email" varchar(255), "address" varchar(255), "city" varchar(255), "postal_code" varchar(255), "notes" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215941"]]
+  [1m[36m (164.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingMethods (20141201215949)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "shipping_methods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "min_shipping_time_in_days" integer, "max_shipping_time_in_days" integer, "tracking_cost" decimal, "one_hundred_dollar_base_insurance_cost" decimal, "one_hundred_dollar_additional_insurance_cost" decimal, "maximum_insurance_value_allowed" decimal, "signature_cost" decimal, "improper_packaging_cost" decimal, "min_shipping_weight_in_grams" integer, "max_shipping_weight_in_grams" integer, "min_shipping_width_in_cm" integer, "max_shipping_width_in_cm" integer, "min_shipping_length_in_cm" integer, "max_shipping_length_in_cm" integer, "min_shipping_height_in_cm" integer, "max_shipping_height_in_cm" integer, "base_shipping_cost" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215949"]]
+  [1m[36m (125.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrderStatuses (20141201215957)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "order_statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201215957"]]
+  [1m[36m (148.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateShippingCarriers (20141201220005)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "shipping_carriers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201220005"]]
+  [1m[36m (152.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateProvinces (20141201220014)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProvinces (20141201220014)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "provinces" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "pst" integer, "gst" integer, "hst" integer, "qst" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201220014"]]
+  [1m[36m (134.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCountries (20141201220022)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "countries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "currency_abbreviation" varchar(255), "multiplied_against_CAD_for_currency_value_comparisons" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201220022"]]
+  [1m[36m (148.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateHelpChats (20141201220030)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "help_chats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "message_from_customer" boolean, "message" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201220030"]]
+  [1m[36m (141.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePeoplePictures (20141201220038)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "people_pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "file_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141201220038"]]
+  [1m[36m (194.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_author_type_and_author_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_active_admin_comments_on_namespace' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admin_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-12-01 16:02:26 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 2  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/activeadmin-8c87611980fa/app/views/active_admin/page/index.html.arb (222.2ms)
+Completed 200 OK in 240ms (Views: 225.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:27 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-12-01 16:02:28 -0600
