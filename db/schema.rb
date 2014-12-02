@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202001617) do
+ActiveRecord::Schema.define(version: 20141202004202) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -47,8 +47,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "adminpicture_id"
   end
 
+  add_index "admin_users", ["adminpicture_id"], name: "index_admin_users_on_adminpicture_id"
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
@@ -63,7 +65,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "province_id"
   end
+
+  add_index "billing_addresses", ["province_id"], name: "index_billing_addresses_on_province_id"
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -72,7 +77,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.boolean  "top_level_category"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
   end
+
+  add_index "categories", ["category_id"], name: "index_categories_on_category_id"
 
   create_table "colours", force: true do |t|
     t.string   "name"
@@ -111,7 +119,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.string   "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "orderdispute_id"
   end
+
+  add_index "dispute_chats", ["orderdispute_id"], name: "index_dispute_chats_on_orderdispute_id"
 
   create_table "dispute_orders", force: true do |t|
     t.boolean  "dispute_active"
@@ -119,14 +130,22 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.decimal  "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "order_id"
   end
+
+  add_index "dispute_orders", ["order_id"], name: "index_dispute_orders_on_order_id"
 
   create_table "help_chats", force: true do |t|
     t.boolean  "message_from_customer"
     t.string   "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer_id"
+    t.integer  "adminuser_id"
   end
+
+  add_index "help_chats", ["adminuser_id"], name: "index_help_chats_on_adminuser_id"
+  add_index "help_chats", ["customer_id"], name: "index_help_chats_on_customer_id"
 
   create_table "order_statuses", force: true do |t|
     t.string   "description"
@@ -181,7 +200,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "order_status"
+    t.integer  "customer_id"
   end
+
+  add_index "orders", ["customer_id"], name: "index_orders_on_customer_id"
 
   create_table "product_colours", force: true do |t|
     t.integer  "quanity"
@@ -189,7 +211,12 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.boolean  "enabled"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "product_id"
+    t.integer  "colour_id"
   end
+
+  add_index "product_colours", ["colour_id"], name: "index_product_colours_on_colour_id"
+  add_index "product_colours", ["product_id"], name: "index_product_colours_on_product_id"
 
   create_table "product_pictures", force: true do |t|
     t.string   "file_name"
@@ -209,7 +236,12 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.boolean  "enabled"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "productpicture_id"
   end
+
+  add_index "products", ["category_id"], name: "index_products_on_category_id"
+  add_index "products", ["productpicture_id"], name: "index_products_on_productpicture_id"
 
   create_table "provinces", force: true do |t|
     t.string   "name"
@@ -219,7 +251,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.integer  "qst"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "country_id"
   end
+
+  add_index "provinces", ["country_id"], name: "index_provinces_on_country_id"
 
   create_table "purchases", force: true do |t|
     t.integer  "quantity"
@@ -232,7 +267,12 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "productpicture_id"
+    t.integer  "order_id"
   end
+
+  add_index "purchases", ["order_id"], name: "index_purchases_on_order_id"
+  add_index "purchases", ["productpicture_id"], name: "index_purchases_on_productpicture_id"
 
   create_table "shipping_addresses", force: true do |t|
     t.string   "full_name"
@@ -245,7 +285,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "province_id"
   end
+
+  add_index "shipping_addresses", ["province_id"], name: "index_shipping_addresses_on_province_id"
 
   create_table "shipping_carriers", force: true do |t|
     t.string   "name"
@@ -264,7 +307,10 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "province_id"
   end
+
+  add_index "shipping_facilities", ["province_id"], name: "index_shipping_facilities_on_province_id"
 
   create_table "shipping_methods", force: true do |t|
     t.string   "name"
@@ -287,6 +333,9 @@ ActiveRecord::Schema.define(version: 20141202001617) do
     t.decimal  "base_shipping_cost"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "shippingcarrier_id"
   end
+
+  add_index "shipping_methods", ["shippingcarrier_id"], name: "index_shipping_methods_on_shippingcarrier_id"
 
 end
