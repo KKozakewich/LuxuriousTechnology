@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141201230337) do
+ActiveRecord::Schema.define(version: 20141202001617) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -150,7 +150,7 @@ ActiveRecord::Schema.define(version: 20141201230337) do
     t.string   "billing_address"
     t.string   "billing_city"
     t.string   "billing_province"
-    t.string   "billing_country"
+    t.string   "billing_countryy"
     t.string   "billing_postal_code"
     t.string   "billing_notes"
     t.string   "shipping_full_name"
@@ -160,7 +160,7 @@ ActiveRecord::Schema.define(version: 20141201230337) do
     t.string   "shipping_address"
     t.string   "shipping_city"
     t.string   "shipping_province"
-    t.string   "shipping_country"
+    t.string   "shipping_countryy"
     t.string   "shipping_postal_code"
     t.string   "shipping_notes"
     t.string   "shipping_facility_name"
@@ -170,7 +170,7 @@ ActiveRecord::Schema.define(version: 20141201230337) do
     t.string   "shipping_facility_address"
     t.string   "shipping_facility_city"
     t.string   "facility_province"
-    t.string   "facility_country"
+    t.string   "facility_countryy"
     t.string   "shipping_facility_postal_code"
     t.string   "shipping_facility_notes"
     t.string   "shipping_method_name"
@@ -180,6 +180,7 @@ ActiveRecord::Schema.define(version: 20141201230337) do
     t.boolean  "shipping_method_with_signature"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "order_status"
   end
 
   create_table "product_colours", force: true do |t|
