@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202004202) do
+ActiveRecord::Schema.define(version: 20141202012146) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -245,10 +245,10 @@ ActiveRecord::Schema.define(version: 20141202004202) do
 
   create_table "provinces", force: true do |t|
     t.string   "name"
-    t.integer  "pst"
-    t.integer  "gst"
-    t.integer  "hst"
-    t.integer  "qst"
+    t.decimal  "pst"
+    t.decimal  "gst"
+    t.decimal  "hst"
+    t.decimal  "qst"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "country_id"

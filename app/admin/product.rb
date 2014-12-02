@@ -1,5 +1,6 @@
 ActiveAdmin.register Product do
 
+permit_params :name, :description, :price, :sale_price, :weight_in_grams, :height_in_cm, :width_in_cm, :length_in_cm, :enabled, :category_id, :productpicture_id 
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
