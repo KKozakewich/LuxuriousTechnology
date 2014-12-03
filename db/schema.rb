@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202012146) do
+ActiveRecord::Schema.define(version: 20141203043651) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -162,7 +162,7 @@ ActiveRecord::Schema.define(version: 20141202012146) do
     t.integer  "order_hst"
     t.integer  "order_qst"
     t.string   "order_notes"
-    t.string   "billing_address_full_name"
+    t.string   "billing_full_name"
     t.string   "billing_email"
     t.string   "billing_phone_number"
     t.string   "billing_cell_number"
@@ -206,7 +206,7 @@ ActiveRecord::Schema.define(version: 20141202012146) do
   add_index "orders", ["customer_id"], name: "index_orders_on_customer_id"
 
   create_table "product_colours", force: true do |t|
-    t.integer  "quanity"
+    t.integer  "quantity"
     t.boolean  "unlimited_quantity"
     t.boolean  "enabled"
     t.datetime "created_at"

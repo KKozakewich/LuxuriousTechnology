@@ -1,6 +1,6 @@
 ActiveAdmin.register HelpChat do
 
-
+permit_params :message_from_customer, :message, :adminuserPid
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #

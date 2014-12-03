@@ -1,6 +1,6 @@
 ActiveAdmin.register Country do
 
-
+permit_params :name, :currency_abbreviation, :multiplied_against_CAD_for_currency_value_comparisons
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
