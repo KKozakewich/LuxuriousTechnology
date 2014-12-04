@@ -1,5 +1,6 @@
 ActiveAdmin.register Colour do
 
+permit_params :name, :red_rgb_value, :green_rgb_value, :blue_rgb_value
 
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

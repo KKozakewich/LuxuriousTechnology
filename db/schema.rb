@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141203043651) do
+ActiveRecord::Schema.define(version: 20141204080453) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20141203043651) do
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
 
   create_table "admin_pictures", force: true do |t|
-    t.string   "file_name"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -47,10 +47,11 @@ ActiveRecord::Schema.define(version: 20141203043651) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "adminpicture_id"
+    t.string   "name"
+    t.integer  "admin_picture_id"
   end
 
-  add_index "admin_users", ["adminpicture_id"], name: "index_admin_users_on_adminpicture_id"
+  add_index "admin_users", ["admin_picture_id"], name: "index_admin_users_on_admin_picture_id"
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
@@ -119,10 +120,10 @@ ActiveRecord::Schema.define(version: 20141203043651) do
     t.string   "message"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "orderdispute_id"
+    t.integer  "dispute_order_id"
   end
 
-  add_index "dispute_chats", ["orderdispute_id"], name: "index_dispute_chats_on_orderdispute_id"
+  add_index "dispute_chats", ["dispute_order_id"], name: "index_dispute_chats_on_dispute_order_id"
 
   create_table "dispute_orders", force: true do |t|
     t.boolean  "dispute_active"
@@ -141,10 +142,10 @@ ActiveRecord::Schema.define(version: 20141203043651) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "customer_id"
-    t.integer  "adminuser_id"
+    t.integer  "admin_user_id"
   end
 
-  add_index "help_chats", ["adminuser_id"], name: "index_help_chats_on_adminuser_id"
+  add_index "help_chats", ["admin_user_id"], name: "index_help_chats_on_admin_user_id"
   add_index "help_chats", ["customer_id"], name: "index_help_chats_on_customer_id"
 
   create_table "order_statuses", force: true do |t|
@@ -219,7 +220,7 @@ ActiveRecord::Schema.define(version: 20141203043651) do
   add_index "product_colours", ["product_id"], name: "index_product_colours_on_product_id"
 
   create_table "product_pictures", force: true do |t|
-    t.string   "file_name"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -237,11 +238,11 @@ ActiveRecord::Schema.define(version: 20141203043651) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "category_id"
-    t.integer  "productpicture_id"
+    t.integer  "product_picture_id"
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
-  add_index "products", ["productpicture_id"], name: "index_products_on_productpicture_id"
+  add_index "products", ["product_picture_id"], name: "index_products_on_product_picture_id"
 
   create_table "provinces", force: true do |t|
     t.string   "name"
@@ -267,12 +268,12 @@ ActiveRecord::Schema.define(version: 20141203043651) do
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "productpicture_id"
+    t.integer  "product_picture_id"
     t.integer  "order_id"
   end
 
   add_index "purchases", ["order_id"], name: "index_purchases_on_order_id"
-  add_index "purchases", ["productpicture_id"], name: "index_purchases_on_productpicture_id"
+  add_index "purchases", ["product_picture_id"], name: "index_purchases_on_product_picture_id"
 
   create_table "shipping_addresses", force: true do |t|
     t.string   "full_name"
@@ -333,9 +334,9 @@ ActiveRecord::Schema.define(version: 20141203043651) do
     t.decimal  "base_shipping_cost"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "shippingcarrier_id"
+    t.integer  "shipping_carrier_id"
   end
 
-  add_index "shipping_methods", ["shippingcarrier_id"], name: "index_shipping_methods_on_shippingcarrier_id"
+  add_index "shipping_methods", ["shipping_carrier_id"], name: "index_shipping_methods_on_shipping_carrier_id"
 
 end

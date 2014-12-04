@@ -1,6 +1,23 @@
 ActiveAdmin.register BillingAddress do
 
 permit_params :full_name, :email, :phone_number, :cell_number, :address, :city, :postal_code, :notes, :province_id
+ 
+ index do
+    selectable_column
+    id_column
+    column :province_id
+    column :full_name
+    column :email
+    column :phone_number
+    column :cell_number
+    column :address
+    column :city
+    column :postal_code
+    column :notes
+    column :created_at
+    column :updated_at
+    actions
+  end
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
